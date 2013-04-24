@@ -1,0 +1,616 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	margin:0 auto;
+	text-align: center;
+	background: #ff4d4d; /* orangey */
+	background: #e2214b; /* pinky */
+	background: #f21b3f;
+	color: #fffff4;
+}
+
+a {
+	color: #ffd503;
+}
+
+a:hover {
+	color: #fffff4;
+}
+
+p {
+	margin: 1.5em 0;
+}
+
+em {
+	font-style: italic;
+}
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	background: url('../i/figuros-logo.svg') 0 0 no-repeat;
+	width: 121px;
+	height: 43px;
+	margin: 3em auto 1.6em;
+	text-indent: -999em;
+	position: relative;
+}
+
+header h2 {
+	font-size: 2.3em;
+	font-weight: 200;
+	letter-spacing: 0;
+	line-height: 1.4;
+}
+
+header p {
+	margin: 2em auto 2.5em;
+}
+
+header p a {
+	display: block;
+	background: #ffd503;
+	color: #f21b3f;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.35em;
+	padding: 1.2em;
+	margin: 0 auto;
+	position: relative;
+	width: 150px;
+	/* CSS 3 magic */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 5px 0px 0px #ec9600;
+	box-shadow: 0px 5px 0px 0px #ec9600;
+}
+
+header p#get-started-button span {
+	font-weight: 300;
+	width: 200px;
+	text-align: left;
+	line-height: 1.4;
+	position: absolute;
+	margin: -62px 0 0 120px;
+	letter-spacing: 0;
+}
+
+section#story p.note,
+header p#get-started-button span {
+	color: #c71b38;
+}
+
+header p a:hover {
+	background: #ffdd1e;
+	color: #f21b3f;
+	text-shadow: 0px 0px 10px #ffffff;
+	filter: dropshadow(color=#ffffff, offx=0, offy=0);
+	-webkit-transition:background .1s ease-in;
+}
+
+header p a:active {
+	top: 2px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 3px 0px 0px #ec9600;
+	box-shadow: 0px 3px 0px 0px #ec9600;
+}
+
+section#how-it-works {
+	margin: 0 auto;
+	width: 480px;
+}
+
+section#how-it-works a {
+	display: block;
+	padding-top: 230px;
+	height: 250px;
+	width: 480px;
+	-webkit-border-radius: 470px;
+	-moz-border-radius: 470px;
+	border-radius: 470px;
+	margin: -469px 0 0 0;
+	position: absolute;
+	text-indent: -999em;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+section#how-it-works a:hover {
+	text-indent: 0;
+	background: #222;
+	opacity: .2;
+	-webkit-transition:background .1s ease-in;
+}
+
+section#how-it-works img{
+	-webkit-border-radius: 470px;
+	-moz-border-radius: 470px;
+	border-radius: 470px;
+	padding: 0;margin: 0;
+	position: relative;
+}
+
+section#story {
+	margin: -1em auto 2em;
+	text-align: justify;
+	width: 460px;
+	font-size: 1.1em;
+	font-weight: 100;
+	line-height: 1.4;
+}
+
+section#story h3 {
+	font-size: 1.6em;
+	margin: 2em 0 1em 0;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+section#story ul li {
+	background: #c71b38;
+	margin-bottom: 1em;
+	padding: 1em 1.5em;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-family: serif;
+	font-style: italic;
+	font-weight: 100;
+	text-align: left;
+	text-indent: -5px;
+}
+
+section#story p.note,
+section#story ul li a,
+header p#get-started-button span {
+	font-family: "Lato", serif;
+	text-align: left;
+	font-style: italic;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+section#story p.note,
+section#story ul li a {
+	font-weight: 100;	
+}
+
+
+section#story p.note {
+	font-weight: 300;
+}
+	
+footer {
+	margin: 4em 0;
+}
+
+footer ul li {
+	display: inline;
+	margin: 0 1em;
+	text-align: left;
+}
+
+/* CHART STYLING */
+
+.axis{
+fill: none;
+stroke: black;
+shape-rendering: crispEdges;
+}
+circle{
+	shape-rendering: smoothEdges;
+}
+svg {
+/*	border: #ccc 1px dotted;*/
+	margin: 0 auto;
+}
+text {
+ font-family: sans-serif;
+ font-size: 11px;
+ color: black;
+}
+.dontseeme {
+	display: none;
+}
+.seeme {
+	display: block;
+		font-weight: bold;
+}
+span {
+	font-weight: bold;
+}
+fieldset,form{
+	border:0;
+}
+.title{
+	font-weight: bold;
+}
+
+/* GENERATE */
+
+.generate header {
+	background: #f21b3f;
+	overflow: hidden;
+	padding: 0 0 0 0;
+	height: 50px;
+	height: 60px;
+}
+
+.generate {
+	background: #fffff9;
+}
+
+.generate header section#container {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.generate header section#container h1 {/*
+	border-right: 1px dotted #b51a3c;*/
+	height: 60px;
+}
+
+.generate header h1 {
+	background: none;
+	margin: 5px 15px 0 0;
+	float: left;
+	position: relative;
+	width: 95px;
+}
+
+.generate header h1 a {
+	background: url('../i/figuros-logo.svg') 0 0 no-repeat;
+	background-size: 100%;
+	width: 95px;
+	height: 35px;
+	margin-top: 7px;
+	display: block;
+	text-indent: -999em;
+	position: relative;
+}
+
+.generate form {
+	float: left;
+	position: relative;
+	height: 60px;
+	padding: 5px 0 0;
+	border-left: 1px dotted #b51a3c;
+	width: 565px;
+}
+
+.generate form,
+.generate form fieldset,
+.generate form fieldset,
+.generate form fieldset label,
+.generate form fieldset input {
+		vertical-align: top;
+		margin-top: 0;
+		padding-top: 0;
+}
+
+.generate form fieldset {
+	height: 60px;
+	padding: 5px 0 0 15px;
+}
+
+.generate form fieldset span {
+	font-family: Helvetica, sans-serif;
+	float: left;
+	position: relative;
+	margin-top: 5px;
+}
+
+.generate form fieldset span.field-people {
+	margin-top: 10px;
+}
+
+.generate form fieldset span.field-people img {
+	float: left;
+	position: relative;
+}
+
+.generate form fieldset span.field-people em {
+	position: relative;
+	text-indent: -999em;
+	display: block;
+	width: 16px;
+	float: left;
+	margin: 7px 10px 0;
+	height: 22px;
+	background: url("../i/icons.svg") -100px 0 no-repeat;
+}
+
+.generate form fieldset input {
+	border: 0;
+	background: #fffff9;
+	padding: 3px;
+	margin: 5px 0 0 0;
+	font-size: .9em;
+	font-family: 'Raleway', sans-serif;
+	width: 50px;
+	color: #333;
+}
+
+.generate form label {
+	position: relative;
+	float: left;
+}
+
+select#partner {
+	margin: 10px;
+	width: 180px;
+}
+
+.generate form input.latlon {
+	height: 24px;
+	width: 210px;
+	margin-right: 10px;
+}
+
+span.field-location label {
+	display: none;
+}
+
+div#actions {
+	float: right;
+	padding-top: 10px;
+	width: 320px;
+}
+
+header div#actions p {
+margin: 0;
+	float: left;
+}
+header div#actions p a {
+	padding: 12px;
+	font-size: 1em;
+	letter-spacing: 0;
+	width: 50px;
+	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 2px 0px 0px #ec9600;
+	box-shadow: 0px 2px 0px 0px #ec9600;
+}
+
+header div#actions p a:active {
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: 0px 1px 0px 0px #ec9600;
+	box-shadow: 0px 1px 0px 0px #ec9600;
+}
+
+div#actions ul {
+	float: right;
+}
+
+div#actions ul li {
+	float: left;
+	margin-left: 5px;
+	position: relative;
+}
+
+div#actions ul li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-indent: -999em;
+}
+
+li.share-twitter a {
+	background: url('../i/icons.svg') -150px 0 no-repeat;
+}
+
+li.share-facebook a {
+	background: url('../i/icons.svg') -200px 0 no-repeat;
+}
+
+li.share-vine a {
+	background: url('../i/icons.svg') -250px 0 no-repeat;
+}
+
+li.share-twitter a:hover {   background-position: -150px -50px; }
+li.share-facebook a:hover {	 background-position: -200px -50px; }
+li.share-vine a:hover {      background-position: -250px -50px; }
+
+li.share-twitter a:active {  background-position: -150px -100px; }
+li.share-facebook a:active { background-position: -200px -100px; }
+li.share-vine a:active {     background-position: -250px -100px; }
+
+
+.generate header span.field-date {
+	margin-right: 10px;
+}
+
+.generate header span.field-date a {
+	display: block;
+	position: relative;
+	color: #222;
+	height: 35px;
+	width: 30px;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	background: url('../i/ui-sprites.png') 0 0 no-repeat;
+}
+
+.generate header span.field-date a:hover {
+	background-position: 0 -40px;
+}
+
+.generate header span.field-date a:active {
+	background-position: 0 -80px;
+	padding-top: 1px;
+}
+
+span.field-date a em {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: .5em;
+	padding-top: 7px;
+	display: block;
+	position: relative;
+}
+
+span.field-date a strong {
+	font-size: .9em;
+	display: block;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+span.field-items, span.field-color {
+	background: #a91938;
+	background: #ddd;
+	background: url('../i/icons.svg') 0 -50px no-repeat;
+	margin-right: 10px;
+	display: block;
+	width: 120px;
+	height: 40px;
+}
+
+span.field-color {
+	margin-right: 0;
+}
+
+span.field-items label#amount-label {
+	background: url('../i/icons.svg') -50px 0 no-repeat;
+	display: block;
+	font-size: .7em;
+	color: #fff;
+	text-decoration: none;
+	padding-top: 10px;
+	position: relative;
+	height: 30px;
+	width: 30px;
+	margin: 5px 0 0 5px;
+}
+
+/*span.field-items a#amount-label:hover {
+	background-position: -40px -40px;
+}
+
+span.field-items a#amount-label:active {
+	background-position: -40px -80px;
+	padding-top: 13px;
+}
+*/
+/*
+span.field-color {
+	width: 200px;
+	background: #818;
+}*/
+span.field-color label {
+	background: url('../i/ui-sprites.png') -80px 0 no-repeat;
+	display: block;
+	font-size: .7em;
+	color: #222;
+	margin: 3px 0 0 5px;
+	text-decoration: none;
+	padding-top: 12px;
+	position: relative;
+	height: 35px;
+	width: 30px;
+	text-indent: -999em;
+}
+
+span.field-color a:hover {
+	background-position: -80px -40px;
+}
+
+span.field-color a:active {
+	background-position: -80px -80px;
+}
+
+/* SLIDERS */
+
+div.slider {
+	background: url('../i/icons.svg') 0 -100px no-repeat;
+	padding: 0em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding-right: 14px;
+	opacity: 1;
+	width: 60px;
+	margin: 15px 0 0 37px;
+}
+
+div.slider a {
+	position: relative;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background: #ffd403;
+	text-indent: -999em;
+	top:-2px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 1px 0px 0px #ec9600;
+	box-shadow: 0px 1px 0px 0px #ec9600;
+}
+
+/* COLOR OUTPUT AND OPTIONS */
+
+ul.color-options {
+	margin: 8px 0 0 7px;
+}
+
+ul.color-options li a,
+div#color-output {
+	position: relative;
+	display: block;
+	width: 22px;
+	height: 22px;
+	text-indent: -999em;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+ul.color-options li a {
+	float: left;
+	margin-left: 2px;
+}
+
+div#panel-start {
+	background: #b6142f;
+	padding: 2em 0 .5em;
+	margin-bottom: 2em;
+}
+div#panel-start a {
+	width: 250px;
+	}
+h3 {
+	font-size: 1.3em;
+}
+
+/*background: url('../i/figuros-logo.png') 0 0 no-repeat;
+width: 118px;
+height: 43px;
+margin: 3em auto 1.6em;
+text-indent: -999em;
+position: relative;
+*/
+
+/*h1 { margin: 0; padding: .5em; font-size: 1em; display: none}*/
+/*header {
+	background: #333;
+	color: #eee;
+}*/
