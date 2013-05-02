@@ -46,6 +46,7 @@ function getLoggedInDetails() {
 function onLoggedInDetails(data){
 	// $("#logged-in-as").append("logged in as <img width=\"30\" src=\""+data.data.profile_picture+"\" /> "+data.data.username+" (<a href=\"http://instagram.com/accounts/logout/\">sign out</a>)");
 	$('#self-avatar').attr('src', data.data.profile_picture);
+	userA = data.data.username;
 }
 
 function getUserFeed(userid, fn){
@@ -338,18 +339,9 @@ function calculateDistances(data){
 	
 	combinedData = data;
 	update(combinedData);
-		// 
-		// if (igCallback) {  
-		// 	igCallback();
-		// }
-
-	// console.log(combinedData);
-	
 }
 
 function igCallback(){
-	// console.log("hi!");
-	// console.log(combinedData);
 	igCallback();
 }
 
@@ -358,8 +350,6 @@ function igInit(){
 	getFollowList(1);
 	getLoggedInDetails();
 	getUserFeed("colors");
-//	console.log(userBData);
-//	callback("http://distilleryimage0.s3.amazonaws.com/f8d452d49ca811e28fba22000a1fb1a7_6.jpg");
 }
 
 function igUpdate(callback){
@@ -369,8 +359,3 @@ function igUpdate(callback){
 	}
 	getUserFeed($('#partner').find(":selected").val(), callback);
 }
-
-// 
-// $(function(){
-// 
-// });

@@ -4,6 +4,7 @@
 var access_token;
 var dataset;
 var userInput = {};
+var userA;
 var g; // main g element
 var revisedItemCount;
 
@@ -172,7 +173,8 @@ function setScales(){
 
 function update(data) {
 
-	// console.log("update called");
+	// hide instructions
+	$('#instructions').css("display","none");
 
 	// clear canvas if shapes already there
 	clearShape();
@@ -326,51 +328,44 @@ function setupColors(colors){
 	}
 }
 
+function pushToDB(){
+	data = [];
+	userB = "";
+	
+	// put charting data into an array
+	for(i=0;i<userInput.itemCount;i++){
+	 	data[i] = { "label" : combinedData[i]["caption"], "value" : combinedData[i]["dist"] };
+		if(combinedData[i]["username"]!= userA) {
+			userB = combinedData[i]["username"];
+		}
+	}
+	
+	var obj = { "color" : userInput.color, "itemCount" : userInput.itemCount, "userA" : userA, "userB" : userB, "data" : data };
+	
+	// add color, username, etc
+	
+	var dataString = $.toJSON(obj);
+	$.post('../php/dataInsert.php', {data: dataString}, function(response){
+		//if response includes ?id= it has a confirmation link
+		//if (response.indexOf("?id=") !=-1){
+		if (response == 1){
+			alert("That worked");
+			// warning = false;
+			// window.location = response;
+		} else {
+			alert("So sorry! Looks like there's been a problem.");
+		}
+		console.log(response);
+	});
+}
+
 
 // ------------------ Summary screen + submit to coaster-base  -----------------------
 
 		$('#make-btn').click(function(){
 			event.preventDefault();
-			
-			//post to the database!!
-			// $(this).attr("disabled", "disabled").html("Loading...");
 			console.log("make has been pressed");
-			console.log(combinedData);
-			
-			var obj = { "color" : "#918", "text" : "hello" };
-			
-			// add color, username, etc
-			
-//			 var dataString = $.toJSON(obj);
-			
-			
-//			var command = { type: "whatever" };
-
-			$.ajax({
-			    url:'php/dataInsert.php',
-			    context:$(this),
-			    type:'POST',
-			    data: obj,
-			    success: function(data){
-			       command = {};
-						 alert(data);
-//			       window.location='php/dataInsert.php';
-			    }
-			});
-			
-			//			var dataString = JSON.stringify(combinedData);
-			
-			// var myJSONText = JSON.stringify(myObject, replacer);
-			
-			// $.post('php/dataInsert.php', {data: dataString}, function(response){	
-			// 	if (response.indexOf("confirmation") > -1){
-			// 		warning = false;
-			// 		window.location = response;
-			//  	} else {
-			//  		alert("So sorry! Looks like there's been a problem.");
-			// 		// window.location = $ROOT;
-			// 	}
-			// });
+			pushToDB();
 		});
 
 /* MAKE MAGIC HAPPEN ************************************************/

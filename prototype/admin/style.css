@@ -1,0 +1,517 @@
+/* LAYOUT */
+
+section#header {
+	overflow: hidden;
+}
+
+section#header h2 {
+	font-weight: normal;
+	float: left;
+	text-transform: capitalize;
+}
+
+section#header h2 a,
+section#header h2 a:hover {
+	color: #aaa;
+	text-decoration: none;
+}
+
+nav {
+	float: right;
+	border-left: 1px solid #ddd;
+}
+
+nav ol, nav ol li {
+	list-style: none;
+}
+
+nav ol {
+	margin: 0 0 0 -1px;
+	padding: 0;
+	text-indent:0;
+}
+
+nav ol li {
+	float: left;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #ddd;
+}
+
+nav ol li a {
+	padding: 25px 17px 25px 15px;
+	display: block;
+}
+
+nav ol li a:hover {
+	background: #ddd;
+}
+
+nav ol li#nav-logout {
+	border-right: 0;
+}
+
+nav ol li#nav-logout a {
+	padding-right: 0;
+	color: #aaa;
+}
+
+nav ol li#nav-logout a:hover {
+	background: transparent;
+	color: #fff;
+}
+
+nav ol li.nav-current a,
+nav ol li.nav-current a:hover {
+	background: #ddd;
+	color: #d01;
+	text-decoration: none;
+}
+
+nav ol li.nav-current a:hover {
+	cursor: default;
+}
+
+section#content, section#footer, section#header {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+div#header-wrapper {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+
+section#footer p {
+	text-align: center;
+	font-size: .9em;
+	margin: 3em 0;
+	color: #ddd;
+}
+
+/* SIGN IN */
+
+.signin section {
+	background: #fff;
+	margin: 17em auto 0;
+	padding: 20px 20px 40px 20px;
+	width: 300px;
+}
+
+.signin {
+	background: #eee;
+}
+
+form {
+	font-size: .9em;
+}
+
+label {
+	display: block;
+	overflow: auto;
+	margin-bottom: 5px;
+}
+
+input, textarea {
+	width: 180px;
+	float: right;
+}
+
+textarea {
+	height: 100px;
+}
+
+div.errors {
+	background: #901;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 1em;
+}
+
+.btn {
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	border: 0;
+	padding: 5px 0;
+}
+
+/* GENERAL */
+
+body, input, textarea, .btn {
+  font-family: Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+body {
+	margin: 0 auto;
+}
+table {
+  font-size: .8em;
+  border-collapse: collapse;
+  width: 100%;
+}
+table td {
+  margin: 0;
+  padding: 3px 10px 0 0;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  height: 50px;
+}
+table th { 
+  text-align: left;
+  padding-bottom: 5px;
+}
+h1 {
+  margin: 2em 0 1.5em 0;
+}
+h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+a {
+  color: #d01;
+}
+a:hover {
+  color: #901;
+}
+span {
+  color: #ddd;
+}
+
+/* ORDERS */
+
+h1#process {
+	margin-bottom: 0;
+	}
+	
+#orders #content li {
+	font-size: .8em; 
+	margin: 5px;
+	}
+
+table {
+	border-bottom: 1px solid #ddd;
+}
+
+thead th {
+	color: #ddd;
+}
+
+th.col-date {
+	width: 5%;
+}
+th.col-time {
+	width: 5%;
+}
+th.col-name {
+	width: 12%;
+}
+th.col-address {
+	width: 30%;
+}
+th.col-price {
+	width: 7%;
+}
+th.col-thumbnails {
+	width: 20%;
+}
+td.col-payment {
+	text-align: center;
+}
+
+li.unpaid {
+	background: #fff000;
+}
+
+/* GIFT CODES */
+
+td.col-id {
+	width: 3%;
+}
+
+td.col-code {
+	font-family: courier, monospace;
+	width: 16%;
+}
+
+th.col-value, td.col-value {
+	text-align: center;
+	width: 13%;
+}
+
+th.col-creator, td.col-creator, th.col-paid, td.col-paid {
+	text-align: center;
+	width: 8%;
+}
+
+td.col-notes {
+	width: 20%;
+}
+
+td.col-creation, td.col-expiration, td.col-used {
+	width: 12%;
+}
+
+/* DASHBOARD */
+
+dl {
+	overflow: hidden;
+	margin: 0 0 4em 0;
+}
+
+dl div {
+/*	border-top: 5px solid #ddd;*/
+	width: 17%;
+	margin-left:3.7%;
+	float: left;
+}
+
+dl div:first-child {
+	margin-left: 0;
+}
+
+dl dt {
+	color: #ddd;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .8em;
+	margin: 1.5em 0 0 0;
+}
+
+dl dd {
+	font-size: 8em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+dl dd em {
+	letter-spacing: -5px;
+	font-style: normal;
+	margin: 0 0 -1em 0;
+}
+
+small {
+	font-size: .18em;
+	clear: both;
+}
+
+
+dl dd span {
+	font-size: .2em;
+}
+
+/* DASHBOARD CHART */
+
+.barGraph {
+	height: 150px;
+	margin: 1em 0 6em 0;
+	border-bottom: 1px dotted #ddd;
+	padding: 0;
+	position: relative;
+}
+
+.barGraph li {
+	font-size: .9em;
+	border-bottom: none;
+	bottom: 0; 
+	color: #FFF;
+	margin: 0 0 0 0; 
+	padding: 0 0 0 0;
+	position: absolute;
+	list-style: none;
+	text-align: center;
+	width: 50px;
+}
+
+
+
+.barGraph li.p1{ background-color:#D01; }
+.barGraph li.p1 span{ display: block; padding-top: 7px; color: #fff; }
+.barGraph li.label{ background: none; color: #ddd; margin-bottom: -23px; }
+.barGraph li.label strong { color: #aaa;}
+
+.barGraph .month { border-left: 1px dotted #ddd; text-align:center; background: none; color: #777; height: 100%; }
+
+/* SUBNAV */
+
+section#subnav {
+	border-bottom: 1px solid #DDD;
+	padding: 1.5em 0;
+	overflow: auto;
+}
+
+section#subnav form {
+	width: 40%;
+	float: left;
+}
+
+section#subnav form fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+section#subnav form fieldset input,
+section#subnav form fieldset select {
+	float: left;
+	margin-right: 5px;
+	height: 20px;
+}
+
+section#subnav form fieldset input.btn-submit {
+	float: none;
+	width: 80px;
+}
+
+section#subnav nav {
+	border: 0;
+	float: right;
+	width: 60%;
+}
+
+section#subnav nav ol {
+	float: right;
+}
+
+section#subnav nav ol,
+#orders section#subnav nav ol li,
+section#subnav nav ol li a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#orders section#subnav nav ol li {
+	margin-left: 40px;
+}
+
+section#subnav nav ol li a {
+	font-size: 1.25em;
+}
+
+section#subnav nav ol li.add-order a {
+	font-size: .7em;
+	padding-top: .4em;
+}
+
+section#subnav nav ol li a:hover {
+	background: none;
+} 
+
+#orders section#subnav nav ol li.nav-current a {
+	background: none;
+	font-weight: bold;
+}
+
+tr th.batch-header {
+	background: #eee;
+	color: #aaa;
+	padding: 15px 10px;
+}
+
+/* FORMS */
+
+form,
+form.order fieldset,
+form.order fieldset ol,
+#orders #content form.order fieldset ol li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+
+#orders #content form.order fieldset ol {
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+	column-count:3;
+	-moz-column-gap:10px; /* Firefox */
+	-webkit-column-gap:100px; /* Safari and Chrome */
+	column-gap:100px;
+	clear: both;
+}
+
+#orders #content form.order fieldset ol li {
+	clear: both;
+	height: 4em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid #eee;
+	width: 400px;
+}
+
+#orders #content form.order fieldset ol li label {
+	float: left;
+	width: 150px;
+	font-size: 1.5em;
+}
+
+form.order fieldset ol li input {
+	float: none;
+	font-size: 1.3em;
+	text-align: left;
+/*	width: 300px;*/
+}
+
+form.order input.save-btn {
+	background: #d01;
+	color: #fff;
+	font-weight: bold;
+	float: none;
+	text-align: center;
+	width: 400px;
+	font-size: 3em;
+	padding: .5em 0;
+	margin: 1em 0;
+}
+
+p.msg {
+	background: #fff000;
+	text-align: center;
+	padding: 1.3em;
+}
+
+p.add-order-msg {
+	width: 60%;
+	margin-bottom: 3em;
+	line-height: 1.4;
+}
+
+/* KPI Table */
+
+table#kpi th,
+table#kpi td {
+	text-align: center;
+	padding-right: 0;
+}
+
+table#kpi th.row-label, 
+table#kpi td.row-label {
+	text-align: left;
+}
+
+td.row-data {
+	width: 40%;
+}
+
+td.row-data span {
+	height: 15px;
+	display: block;
+	overflow: hidden;
+}
+
+td.row-count {
+	padding: 0;
+	width: 10%;
+}
+
+th.col-color {
+	width: 3%;
+}
+
+td.row-count,
+th.col-count {
+	text-align: center;
+}

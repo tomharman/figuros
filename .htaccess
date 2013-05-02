@@ -1,0 +1,7 @@
+# Access-Control-Allow-Origin: *
+
+RewriteEngine On
+RewriteRule ^([0-9a-zA-Z_]+)$ show.php?id=$1 [L]
+# RewriteRule ^generate/([0-9a-zA-Z_]+)$ generate.php?id=$1 [L]
+
+# ErrorDocument 404 /404.php

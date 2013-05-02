@@ -1,4 +1,4 @@
-<? require_once('php/global.php'); ?>
+<? require_once('php/config.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -58,6 +58,7 @@
         </div>
       </section>
     </header>
+    <img id="instructions" src="i/instructions.png" width="990" height="400" alt="Instructions" />
     <canvas id="imageHolder" width="300" height="300" style="display: none"></canvas>
   </body>
   <script src="js/libs/jquery-1.9.1.js"></script>
