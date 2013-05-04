@@ -1,5 +1,25 @@
 <?
 
+//config
+include_once("prototype/php/config.php");
+	
+/**********************************************************************
+*  ezSQL initialisation for mySQL
+*/
+
+// Include ezSQL core
+include_once "prototype/php/shared/ez_sql_core.php";
+
+// Include ezSQL database specific component
+include_once "prototype/php/ez_sql_mysql.php";
+
+// Initialise database object and establish a connection
+// at the same time - db_user / db_password / db_name / db_host
+	
+$db = new ezSQL_mysql($DB_USERNAME,$DB_PASSWORD,$DB_DATABASE,$DB_HOST);
+
+
+
 function check_email_address($email) {
   // First, we check that there's one @ symbol, 
   // and that the lengths are right.
@@ -38,6 +58,21 @@ $domain_array[$i])) {
   return true;
 }
 
+$msg = 0;
+
+
+// Post to db
+if(isset($_POST["email"])){
+  if(check_email_address($_POST["email"]) == true){
+    $msg = $_POST["email"] . " added to our mailing list. Thanks, we'll be in touch soon!"; // good email
+
+    // add email to database
+    $db->query("INSERT INTO emails (email) VALUES ('".$_POST["email"]."')");
+    
+  } else {
+    $msg = "That doesn't look like an email address. We didn't add it to our mailing list. Please try again.";
+  }
+}
 
 
 ?>
@@ -61,6 +96,7 @@ $domain_array[$i])) {
   	
   </head>
   <body id="figuros">
+    <? if($msg!=""){ ?><div class="notice"><?=$msg?></div><? } ?>
     <nav>
       <ol>
         <li id="nav-zero"><a href="#zero">zero</a></li>
@@ -101,11 +137,32 @@ $domain_array[$i])) {
       <h2>Figuros does just that. It was made to explore the way we consume possessions and make the ones we do, more meaningful. So don’t be surprised when your friends’ first response is, “it’s so you”.</h2>
     </section>
     <section id="eight">
-      <h2>Information going here soon.</h2>
+      <h2>Like something you see?</h2>
+      <div class="next">
+        <h3>Be the first to know when we launch</h3>
+        <form action="index.php" method="post">
+          <fieldset>
+            <label for="email">Enter your email</label>
+            <input type="text" id="email" name="email" />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+      <div class="next">
+        <h3>Turn a relationship into a shape</h3>
+        <p id="get-started-button"><a href="/prototype/">Play with the prototype</a></p>
+      </div>
+      <div class="next">
+        <h3>Spare a tweet</h3>
+        <ul>
+          <li><a href="http://www.twitter.com/home?status=The%20Light%20of%20Your%20Life.%20Designed%20with%20data.%20Made%20with%20lasers%3A%20http%3A%2F%2Ffiguros.com%20%40figuros">“The Light of Your Life. Designed with data. Made with lasers: figuros.com @figuros”</a></li>
+          <li><a href="http://www.twitter.com/home?status=.%40figuros%20are%20custom%20laser%20cut%20lamps%20created%20from%20the%20distance%20between%20two%20people%20over%20time%3A%20figuros.com">“.@figuros are custom laser cut lamps created from the distance between two people over time: figuros.com”</a></li>
+        </ul>
+      </div>
     </section>
     <footer>
       <ul>
-        <li><a href="#">hello@figuros.com</a></li>
+        <li><a href="mailto:hi@figuros.com">hi@figuros.com</a></li>
         <li><a href="http://twitter.com/figuros">@figuros</a></li>
       </ul>
     </footer>

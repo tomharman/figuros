@@ -11,7 +11,7 @@
   <body class="generate">
     <header>
       <section id="container">
-        <h1><a href="/">figuros</a></h1>
+        <h1><a href="/prototype/">figuros</a></h1>
         <form action="#" method="post" id="controls">
           <fieldset>
             <span class="field-people">

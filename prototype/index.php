@@ -12,8 +12,9 @@
       <h1>figuros</h1>
       <h2>the light of your life.<br />
       designed from data, made with lasers.</h3>
+      <p>This is a very rough prototype, please be gentle.</p>
       <p id="get-started-button"><a href="https://instagram.com/oauth/authorize/?client_id=7fda2488dc134143a3b450be59f4dad7&amp;redirect_uri=http://figuros.com/prototype/generate.php&amp;response_type=token">Get started</a> <span>this will connect to<br />your Instagram account</span></p>
-      <p>This is a rough protoype.
+      
     </header>
     <section id="how-it-works">
       <img src="i/lamp-small.png" width="451" height="453" alt="Lamp Small" />
@@ -37,7 +38,7 @@
     </section>
     <footer>
       <ul>
-        <li><a href="#">hello@figuros.com</a></li>
+        <li><a href="mailto:hi@figuros.com">hi@figuros.com</a></li>
         <li><a href="http://twitter.com/figuros">@figuros</a></li>
       </ul>
     </footer>

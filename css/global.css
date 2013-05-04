@@ -475,9 +475,146 @@ section#seven h2 {
 section#eight {
 	-webkit-box-shadow: 0 0 0 0;
 	box-shadow: 0 0 0 0;
-	height: 100px;
+	height: none;
 	padding-top: 100px;
 }
+
+/* email signup notice */
+div.notice {
+	background: #ffd503;
+	color: #333;
+	font-weight: bold;
+	padding: 1em;
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+/* outro */
+
+section ul li {
+	background: #c71b38;
+	margin: 1em auto;
+	line-height: 1.4;
+	padding: 1em 1.5em;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-size:1.15em;
+	font-family: "Lato", serif;
+	font-style: italic;
+	font-weight: 100;
+	text-align: left;
+	text-indent: -5px;
+	width: 350px;
+}
+
+section ul li a {
+	text-decoration: none;
+}
+
+input[type=submit] {
+	background: #019;
+}
+
+p#get-started-button a,
+button,
+input[type=submit] {
+	display: block;
+	border: 0;
+	background: #ffd503;
+	color: #f21b3f;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.35em;
+	padding: 1.2em;
+	margin: 0 auto;
+	position: relative;
+	width: 270px;
+	/* CSS 3 magic */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 5px 0px 0px #ec9600;
+	box-shadow: 0px 5px 0px 0px #ec9600;
+}
+
+input[type=submit] {
+	font-size: 1em;
+	padding: .5em 0;
+	width: 80px;
+	display: inline;
+	/* CSS 3 magic */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+p#get-started-button a:hover,
+button:hover,
+input[type=submit]:hover {
+	background: #ffdd1e;
+	color: #f21b3f;
+	text-shadow: 0px 0px 10px #ffffff;
+	cursor: pointer;
+	filter: dropshadow(color=#ffffff, offx=0, offy=0);
+	-webkit-transition:background .1s ease-in;
+}
+
+p#get-started-button a:active,
+button:active,
+input[type=submit]:active {
+	top: 2px;
+/*	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;*/
+	-webkit-box-shadow: 0px 3px 0px 0px #ec9600;
+	box-shadow: 0px 3px 0px 0px #ec9600;
+}
+
+p#get-started-button span {
+	display: block;
+	font-family: "Lato", serif;
+	text-align: center;
+	font-weight: 300;
+	margin: 1.5em auto 3em auto;
+	font-style: italic;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #c71b38;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	font-family: helvetica;
+	font-size: 1.2em;
+}
+
+form {
+	margin: 3em auto 0em auto;
+	min-width: 500px;
+	width: 50%;
+}
+
+div.next {
+	display: block;
+	padding: 3em 0;
+	border-bottom: 1px dotted #C71B28;
+	width: 50%;
+	margin: 0 auto;
+}
+
+div.next h3 {
+	font-size: 1.6em;
+	margin: 0 0 1em 0;
+}
+
 
 /*@media only screen and (max-width: 480px) {*/
 /* iPhone 4 ----------- */
