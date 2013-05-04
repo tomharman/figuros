@@ -155,14 +155,15 @@ if(isset($_POST["email"])){
       </ul>
     </footer>
     <script type="text/javascript">
+     
     $(document).ready(function() {
   			$('section').each(function(i) {
   				var position = $(this).position();
   				// console.log(position);
   				//          console.log('min: ' + position.top + ' / max: ' + parseInt(position.top + $(this).height()));
   				$(this).scrollspy({
-  					min: position.top-25,
-  					max: position.top + $(this).height(),
+  					min: position.top - 25,
+  					max: position.top + $(this).height() - 1,
   					onEnter: function(element, position) {
               // if(console) console.log('entering ' +  element.id);
   						$("#nav-"+element.id).addClass('current');
@@ -174,6 +175,63 @@ if(isset($_POST["email"])){
   				});
   			});
   		});
+  		
+  		$("li#nav-zero a").click(function() {
+          event.preventDefault();
+           $('html, body').animate({
+               scrollTop: $("section#zero").offset().top -25
+           }, 500);
+       });
+       
+        $("li#nav-one a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#one").offset().top - 25
+          }, 500);
+        });
+        $("li#nav-two a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#two").offset().top - 25
+          }, 500);
+        });
+        $("li#nav-three a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#three").offset().top - 25
+          }, 500);
+        });
+        $("li#nav-four a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#four").offset().top - 25
+          }, 500);
+        });
+        $("li#nav-five a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#five").offset().top - 25
+          }, 500);
+        });
+        $("li#nav-six a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#six").offset().top - 25
+          }, 500);
+        });
+        $("li#nav-seven a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#seven").offset().top - 25
+          }, 500);
+        });
+        $("li#nav-eight a").click(function() {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: $("section#eight").offset().top - 25
+          }, 500);
+        });
+        
   	</script>
   </body>
 </html>

@@ -476,7 +476,7 @@ section#eight {
 	-webkit-box-shadow: 0 0 0 0;
 	box-shadow: 0 0 0 0;
 	height: none;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 /* email signup notice */
@@ -611,7 +611,7 @@ div.next {
 }
 
 div.next h3 {
-	font-size: 1.6em;
+	font-size: 1.5em;
 	margin: 0 0 1em 0;
 }
 
