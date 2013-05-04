@@ -568,9 +568,6 @@ p#get-started-button a:active,
 button:active,
 input[type=submit]:active {
 	top: 2px;
-/*	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;*/
 	-webkit-box-shadow: 0px 3px 0px 0px #ec9600;
 	box-shadow: 0px 3px 0px 0px #ec9600;
 }
@@ -594,11 +591,12 @@ label {
 input {
 	font-family: helvetica;
 	font-size: 1.2em;
+	-webkit-appearance: none;
 }
 
 form {
 	margin: 3em auto 0em auto;
-	min-width: 500px;
+/*	min-width: 500px;*/
 	width: 50%;
 }
 
@@ -655,7 +653,6 @@ div.next h3 {
 		font-size: 2.7em;
 	}
 	
-	
 	#figuros section#zero h2 {
 			margin-top: 350px;
 			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0) 100%); /* FF3.6+ */
@@ -678,7 +675,6 @@ div.next h3 {
 		float: none;
 		position: relative;
 		padding: 25px 25px 50px 25px;
-/*		width: 510px;*/
 		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(25%,rgba(0,0,0,0.3)), color-stop(75%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
 		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 25%,rgba(0,0,0,0.3) 75%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -708,6 +704,10 @@ div.next h3 {
 		font-size: 2em;
 		width: 79.5%;
 	}
+	
+	
+	
+	
 }
 
 /*iPhone*/
@@ -735,6 +735,40 @@ div.next h3 {
 		padding: 0 25px 25px 25px;
 		width: 250px;
 	}
+	#figuros section#eight h2, 
+	#figuros section p {
+		background: transparent;
+	}
+	#figuros section#eight {
+		height: 950px;
+		padding: 5px;
+		margin: 0;
+	}
+	div.next {
+		width: 100%;
+		margin: 1em auto;
+		padding: 0;
+	}
+	div.next h3 {
+		line-height: 1.4;
+		width: 80%;
+		margin: 1em auto;
+	}
+	form {
+		width: 100%;
+	}
+	section ul li {
+		width: 80%;
+	}
+	p#get-started-button a {
+		width: 80%;
+	}
+	input {
+		margin: 1em 0;
+	}
+	input[type=submit] {
+		margin: 0 0 2em 0;
+	}
 }
 
 /* iPad portrait */
@@ -754,3 +788,46 @@ and (orientation : portrait) {
 		width: 518px;
 	}
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	#figuros section#eight h2, 
+	#figuros section p {
+		background: transparent;
+	}
+	#figuros section#eight {
+		height: 950px;
+		padding: 5px;
+		margin: 0;
+	}
+	div.next {
+		width: 100%;
+		margin: 1em auto;
+		padding: 0;
+	}
+	div.next h3 {
+		line-height: 1.4;
+		width: 80%;
+		margin: 1em auto;
+	}
+	form {
+		width: 100%;
+	}
+	section ul li {
+		width: 80%;
+	}
+	p#get-started-button a {
+		width: 50%;
+		margin-bottom: 1em;
+	}
+	input {
+		margin: 1em 0;
+	}
+	input[type=submit] {
+		margin: 0 0 2em 0;
+	}
+}
+
+
+
