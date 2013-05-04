@@ -2,23 +2,13 @@
 
 //config
 include_once("prototype/php/config.php");
-	
-/**********************************************************************
-*  ezSQL initialisation for mySQL
-*/
+include_once("prototype/php/shared/ez_sql_core.php");
+include_once("prototype/php/ez_sql_mysql.php");
 
-// Include ezSQL core
-include_once "prototype/php/shared/ez_sql_core.php";
+// Turn off all error reporting
+error_reporting(0);
 
-// Include ezSQL database specific component
-include_once "prototype/php/ez_sql_mysql.php";
-
-// Initialise database object and establish a connection
-// at the same time - db_user / db_password / db_name / db_host
-	
 $db = new ezSQL_mysql($DB_USERNAME,$DB_PASSWORD,$DB_DATABASE,$DB_HOST);
-
-
 
 function check_email_address($email) {
   // First, we check that there's one @ symbol, 
@@ -58,8 +48,7 @@ $domain_array[$i])) {
   return true;
 }
 
-$msg = 0;
-
+$msg = "";
 
 // Post to db
 if(isset($_POST["email"])){
@@ -73,7 +62,6 @@ if(isset($_POST["email"])){
     $msg = "That doesn't look like an email address. We didn't add it to our mailing list. Please try again.";
   }
 }
-
 
 ?>
 
