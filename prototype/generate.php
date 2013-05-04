@@ -49,12 +49,12 @@
           </fieldset>
         </form>
         <div id="actions">
-          <p><a id="make-btn" href="#">Make</a></p>
-          <ul>
-            <li class="share-twitter"><a href="#">Twitter</a></li>
-            <li class="share-facebook"><a href="#">Facebook</a></li>
-            <li class="share-vine"><a href="#">Vine</a></li>
-          </ul>          
+          <p><a id="make-btn" href="#">Save</a></p>
+          <!-- <ul>
+                      <li class="share-twitter"><a href="#">Twitter</a></li>
+                      <li class="share-facebook"><a href="#">Facebook</a></li>
+                      <li class="share-vine"><a href="#">Vine</a></li>
+                    </ul> -->
         </div>
       </section>
     </header>
