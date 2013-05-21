@@ -153,6 +153,7 @@ if(isset($_POST["email"])){
         <li><a href="mailto:hi@figuros.com">hi@figuros.com</a></li>
         <li><a href="http://twitter.com/figuros">@figuros</a></li>
       </ul>
+      <p>Created as part of <a href="http://harmantom.com">Tom Harman</a>'s <a href="http://interactiondesign.sva.edu/festival/2013">MFA thesis</a> work.</p>
     </footer>
     <script type="text/javascript">
      

@@ -619,6 +619,10 @@ form input {
 	padding: 5px;
 }
 
+footer p, footer p a {
+	color: #c71b38;
+}
+
 
 /*@media only screen and (max-width: 480px) {*/
 /* iPhone 4 ----------- */
