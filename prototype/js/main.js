@@ -345,17 +345,16 @@ function pushToDB(){
 	// add color, username, etc
 	
 	var dataString = $.toJSON(obj);
-	$.post('../php/dataInsert.php', {data: dataString}, function(response){
+	$.post('../prototype/php/dataInsert.php', {data: dataString}, function(response){
 		//if response includes ?id= it has a confirmation link
 		//if (response.indexOf("?id=") !=-1){
 		if (response == 1){
-			alert("That worked");
+			alert("That worked! Your lamp shape has been saved.");
 			// warning = false;
 			// window.location = response;
 		} else {
-			alert("So sorry! Looks like there's been a problem.");
+			alert("Sorry! Looks like there's been a problem.");
 		}
-		console.log(response);
 	});
 }
 
@@ -364,7 +363,7 @@ function pushToDB(){
 
 		$('#make-btn').click(function(){
 			event.preventDefault();
-			console.log("make has been pressed");
+			console.log("Save has been pressed");
 			pushToDB();
 		});
 

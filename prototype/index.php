@@ -42,5 +42,6 @@
         <li><a href="http://twitter.com/figuros">@figuros</a></li>
       </ul>
     </footer>
+    <?php include_once("php/analyticstracking.php") ?>
   </body>
 </html>

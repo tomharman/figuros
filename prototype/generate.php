@@ -72,4 +72,5 @@
   <script src="js/instagram.js"></script>
   <script src="js/extractcolor.js"></script>
   <script src="js/main.js"></script>
+  <?php include_once("php/analyticstracking.php") ?>
 </html>

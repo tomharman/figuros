@@ -613,6 +613,12 @@ div.next h3 {
 	margin: 0 0 1em 0;
 }
 
+form input {
+	border: 1px inset;
+	margin: 1em 0;
+	padding: 5px;
+}
+
 
 /*@media only screen and (max-width: 480px) {*/
 /* iPhone 4 ----------- */
@@ -704,9 +710,6 @@ div.next h3 {
 		font-size: 2em;
 		width: 79.5%;
 	}
-	
-	
-	
 	
 }
 

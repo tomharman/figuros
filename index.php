@@ -233,5 +233,6 @@ if(isset($_POST["email"])){
         });
         
   	</script>
+  	<?php include_once("prototype/php/analyticstracking.php") ?>
   </body>
 </html>
